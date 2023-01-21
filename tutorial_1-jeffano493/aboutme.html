@@ -1,0 +1,114 @@
+<style>body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float:right;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #052bd5;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .workbutton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }</style>
+
+<div class="about-section">
+    <h1>About Me</h1>
+    <p>I am a 2nd Year Software Engineering Student at Western University</p>
+    <p>During the summer, I worked as a Junior Software Developer at The Buckmaster Institute</p>
+    <form action="workexperience.html">
+        <p><button class="workbutton">WORK EXPERIENCE</button></p>
+    </form>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="jeff.jpeg" style="width:25%" class="photo">
+        <div class="container">
+          <h2>Jeffano John</h2>
+          <p class="title">Student</p>
+          <p> During the summer, I worked at a company called The Buckmaster Institute. I learned how to code in Python and further expand my programming knowledge. When not at work, I enjoy my time biking and going on hikes. </p>
+          <p>Email: jjohn493@uwo.ca</p>
+          <form action="contact.html">
+            <p><button class="button">CONTACT</button></p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
